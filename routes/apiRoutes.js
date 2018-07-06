@@ -117,6 +117,17 @@ module.exports = function(app) {
       res.render("./partials/pages/results", { lessons: lessons });
     });
   });
+
+  app.put("/api/review/", function(req,res) {
+    db.Rating.create({
+      title: req.body.title,
+      comments: req.body.comments,
+      stars: req.body.stars,
+      LessonId: req.body.id
+    }).then(function(result){
+      res.status(200).end();
+    })
+  });
   // get lessons sorted by ratingQuantity
 
   // /api/lessons?sort
