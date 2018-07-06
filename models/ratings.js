@@ -1,5 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-    var Rating = sequelize.define("Rating", {     
+    var Rating = sequelize.define("Rating", {
+      title: DataTypes.STRING,     
       stars: DataTypes.INTEGER,
       comments: DataTypes.TEXT,
       id: {

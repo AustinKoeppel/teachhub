@@ -23,9 +23,11 @@ VALUES ("Junior Precalc", "math",1, 11, 4, 200, CURRENT_TIMESTAMP, CURRENT_TIMES
    ("Homeconomics: The Budgeting", "homec",1, 11, 3, 40, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
    ("Musical Theory", "music",1, 11, 2, 500, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
 
+
 ##INSERT REVIEWS
 INSERT INTO `teachhub_db`.`Ratings`
 (`stars`,
+`title`,
 `comments`,
 `createdAt`,
 `updatedAt`,
@@ -33,6 +35,7 @@ INSERT INTO `teachhub_db`.`Ratings`
 `LessonId`)
 VALUES(
 5,
+"This changed my life",
 "AMAZING",
 CURRENT_TIMESTAMP,
 CURRENT_TIMESTAMP,
@@ -40,6 +43,7 @@ CURRENT_TIMESTAMP,
 1),
 (
 1,
+"Made my kids cry",
 "BOOOO",
 CURRENT_TIMESTAMP,
 CURRENT_TIMESTAMP,
